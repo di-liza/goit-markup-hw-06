@@ -317,6 +317,8 @@ img {
   border: none;
   color: #000000;
   fill: currentColor;
+
+  transition: color 250ms var(--timing-function);
 }
 .modal-close-btn-icon {
   width: 30px;
@@ -361,6 +363,7 @@ textarea {
 
   font-size: 16px;
 }
+
 .modal-form-filling-label {
   margin-bottom: 4px;
   text-align: left;
@@ -386,9 +389,13 @@ textarea {
   height: 18px;
 
   fill: #212121;
+  transition: fill 250ms var(--timing-function);
 }
 .modal-form-filling-container:focus-within > .form-icon {
   fill: var(--accent-color);
+}
+.modal-form-filling-container:focus-within ~ .modal-form-filling-data {
+  border: 1px solid var(--accent-color);
 }
 
 .modal-form-filling-textarea {
@@ -953,98 +960,4 @@ textarea {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-}
-/* -------------ТРЕНУВАННЯ------------------- */
-/* .form {
-  display: block;
-
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-textarea {
-  resize: horizontal;
-}
-form {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-.form-filed {
-  /* display: flex;
-  flex-direction: column; */
-  margin-bottom: 20px;
-
-  position: relative;
-}
-.form-input {
-  width: 448px;
-  height: 40px;
-
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 42px;
-
-  font-size: 16px;
-}
-.form-label {
-  position: absolute;
-  top: 50%;
-  left: 40px;
-  color: #2b2424;
-
-  transform: translateY(-50%);
-  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  font-size: 10px;
-}
-/* .form-filed:hover-within, */
-.form-filed:focus-within > .form-icon {
-  fill: var(--accent-color);
-}
-.form-filed:focus-within > .form-label {
-  color: var(--accent-color);
-  transform: translateY(-35px);
-}
-/* .form-input:hover + .form-label,
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
-  color: var(--accent-color);
-  transform: translateY(-35px);
-} */
-
-/* .form-input:hover ~ .form-icon,
-.form-input:focus ~ .form-icon {
-  fill: var(--accent-color);
-} */
-/* .form-input:hover,
-.form-input:focus {
-  border: 1px solid #2196f3;
-} */
-
-.from-filed input {
-  margin: 0;
-  padding: 10px 5px;
-}
-.group {
-}
-.group-title {
-  margin: 0;
-}
-.topic-options {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.topic-options li {
-  display: flex;
-  align-items: center;
-}
-.topic-options input[type='checkbox'] {
-}
-.topic-options label {
-  font-size: 10px;
-  margin-left: 10px;
-}
-.form-filed .comment {
-  padding: 15px;
 }
