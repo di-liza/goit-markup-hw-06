@@ -115,8 +115,11 @@
                 ></textarea>
                </div>
                <div class="modal-form-filling">
-                 <input type="checkbox" name="policy" id="policy">
-                <label class="modal-form-filling-policy" for="policy">Погоджуюся з розсилкою та приймаю <a class="modal-form-filling-policy-link" href="">Умови договору</a></label>
+                 
+                <label class="modal-form-filling-policy" >
+                  <input class="modal-form-filling-checkbox" type="checkbox" name="policy" >
+                  <span class="modal-form-filling-checkbox-icon" width="16" height="15"></span>
+                  Погоджуюся з розсилкою та приймаю <a class="modal-form-filling-policy-link" href="">Умови договору</a></label>
                </div>
                  <div>
                   <button class="modal-form-filling-btn" type="submit">Відправити</button>
@@ -524,8 +527,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
-
-
     <script>
       (() => {
         document.querySelector('.js-speaker-form').addEventListener('submit', e => {
@@ -537,10 +538,6 @@
         });
       })();
     </script>
-
-
-
-
 
   </body>
 </html>

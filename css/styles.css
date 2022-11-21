@@ -341,10 +341,50 @@ img {
   position: relative;
   margin-bottom: 10px;
 }
-.modal-form input {
-  margin: 0;
-  padding: 0;
+.modal-form-filling-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
+.modal-form-filling-checkbox-icon {
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+
+  transition: background-color 250ms var(--timing-function);
+}
+.modal-form-filling-checkbox:checked + .modal-form-filling-checkbox-icon {
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+.modal-form-filling-checkbox {
+  position: absolute;
+  white-space: nowrap;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .modal-form-title {
   margin-bottom: 12px;
   font-size: 20px;
@@ -352,8 +392,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.modal-form-filling input,
-textarea {
+.modal-form-filling .modal-form-filling-data,
+.modal-form-filling-textarea {
   padding-top: 12px;
   padding-left: 42px;
   padding-bottom: 12px;
@@ -362,6 +402,19 @@ textarea {
   border-radius: 4px;
 
   font-size: 16px;
+
+  transition: border 250ms var(--timing-function);
+}
+
+.modal-form-filling-data:hover,
+.modal-form-filling-data:focus {
+  outline: transparent;
+  border: 1px solid var(--accent-color);
+}
+.modal-form-filling-textarea:hover,
+.modal-form-filling-textarea:focus {
+  outline: transparent;
+  border: 1px solid var(--accent-color);
 }
 
 .modal-form-filling-label {
@@ -402,7 +455,7 @@ textarea {
   width: 448px;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .modal-form-filling-textarea::placeholder {
   font-weight: 400;
@@ -410,14 +463,10 @@ textarea {
   line-height: 1.166;
   letter-spacing: 0.01em;
 }
-.modal-form-filling-policy {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
+
 .modal-form-filling-policy-link {
+  display: inline-block;
+  margin-left: 4px;
   color: var(--accent-color);
 }
 .modal-form-filling-btn {
@@ -960,4 +1009,10 @@ textarea {
   margin-left: 10px;
   width: 24px;
   height: 24px;
+}
+/* ------------------------------------------------ */
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
