@@ -65,69 +65,63 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <div>
-              <form class="modal-form">
-                <b class="modal-form-title">Залиште свої дані, ми вам передзвонимо</b>
-                <div class="modal-form-filling">
-                  <label class="modal-form-filling-label"  for="name">Ім'я</label>
-                 
-                   <div class="modal-form-filling-container">
-                  
-                      <svg class="form-icon">
-                    <use href="./images/icons.svg#icon-person" width="18" height="18"></use>
-                    </svg>
-                   
-                    <input class="modal-form-filling-data" type="text" name="user-name" id="name" />
-                   </div>
-                </div>
+            <form class="modal-form">
+              <b class="modal-form-title">Залиште свої дані, ми вам передзвонимо</b>
+              <div class="modal-form-filling">
+                <label class="modal-form-filling-label" for="name">Ім'я</label>
 
-                <div class="modal-form-filling">
-                  
-                    <label class="modal-form-filling-label" for="tel">Телефон</label>
-                  <div class="modal-form-filling-container">
+                <div class="modal-form-filling-container">
+                  <svg class="form-icon">
+                    <use href="./images/icons.svg#icon-person" width="18" height="18"></use>
+                  </svg>
+
+                  <input class="modal-form-filling-data" type="text" name="user-name" id="name" />
+                </div>
+              </div>
+
+              <div class="modal-form-filling">
+                <label class="modal-form-filling-label" for="tel">Телефон</label>
+                <div class="modal-form-filling-container">
                   <svg class="form-icon">
                     <use href="./images/icons.svg#icon-phone" width="18" height="18"></use>
                   </svg>
                   <input class="modal-form-filling-data" type="tel" name="phone-number" id="tel" />
-                  </div>
                 </div>
+              </div>
 
-
-               <div class="modal-form-filling">
-                 <label class="modal-form-filling-label"  for="mail">Пошта</label>
+              <div class="modal-form-filling">
+                <label class="modal-form-filling-label" for="mail">Пошта</label>
                 <div class="modal-form-filling-container">
-                 
                   <svg class="form-icon">
-                   <use href="./images/icons.svg#icon-email" width="18" height="18"></use>
-                 </svg>
-                 
-                <input class="modal-form-filling-data" type="email" name="mail" id="mail" />
-                </div>
-               </div>
+                    <use href="./images/icons.svg#icon-email" width="18" height="18"></use>
+                  </svg>
 
-               <div class="modal-form-filling">
-                 <label class="modal-form-filling-label"  for="comment">Коментар</label>
+                  <input class="modal-form-filling-data" type="email" name="mail" id="mail" />
+                </div>
+              </div>
+
+              <div class="modal-form-filling">
+                <label class="modal-form-filling-label" for="comment">Коментар</label>
                 <textarea
                   class="modal-form-filling-textarea"
                   placeholder="Введіть текст"
                   name="comment"
                   id="comment"
                 ></textarea>
-               </div>
-               <div class="modal-form-filling">
-                 
-                <label class="modal-form-filling-policy" >
-                  <input class="modal-form-filling-checkbox" type="checkbox" name="policy" >
-                  <span class="modal-form-filling-checkbox-icon" width="16" height="15"></span>
-                  Погоджуюся з розсилкою та приймаю <a class="modal-form-filling-policy-link" href="">Умови договору</a></label>
-               </div>
-                 <div>
-                  <button class="modal-form-filling-btn" type="submit">Відправити</button>
-                </div>
-            </div>
-              
-              </form>
-            
+              </div>
+              <div class="modal-form-filling">
+                <label class="modal-form-filling-policy">
+                  <input class="modal-form-filling-checkbox" type="checkbox" name="policy" />
+                  <span class="modal-form-filling-checkbox-icon"></span>
+                  Погоджуюся з розсилкою та приймаю
+                  <a class="modal-form-filling-policy-link" href="">Умови договору</a></label
+                >
+              </div>
+              <div>
+                <button class="modal-form-filling-btn" type="submit">Відправити</button>
+              </div>
+            </form>
+
             <button class="modal-close-btn" type="button" data-modal-close>
               <svg class="modal-close-btn-icon">
                 <use href="./images/icons.svg#icon-close" width="30" height="30"></use>
@@ -506,21 +500,19 @@
         </div>
         <div>
           <form class="footer-form">
-            
-              <div class="footer-form-data-containtainer">
-                  <b class="footer-form-text">Підпишіться на розсилку</b>
-                  <input class="footer-form-data" type="email" placeholder="E-mail">
-                </div>
+            <div class="footer-form-data-containtainer">
+              <b class="footer-form-text">Підпишіться на розсилку</b>
+              <input class="footer-form-data" type="email" placeholder="E-mail" name="mail" />
+            </div>
 
-                <div class="footer-form-btn">
-                  <button class="footer-form-btn-fill" type="submit">
-                    <span class="footer-form-btn-fill-text">Підписатися</span>
-                    <svg class="footer-form-btn-icon ">
-                    <use href="./images/icons.svg#icon-send-telegram"></use>
-                  </svg>
-                  </button>
-                </div>
-              
+            <div class="footer-form-btn">
+              <button class="footer-form-btn-fill" type="submit">
+                <span class="footer-form-btn-fill-text">Підписатися</span>
+                <svg class="footer-form-btn-icon">
+                  <use href="./images/icons.svg#icon-send-telegram"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -538,6 +530,5 @@
         });
       })();
     </script>
-
   </body>
 </html>
