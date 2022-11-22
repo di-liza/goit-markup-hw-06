@@ -398,6 +398,8 @@ img {
   padding-left: 42px;
   padding-bottom: 12px;
 
+  resize: none;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -419,7 +421,7 @@ img {
   margin-bottom: 4px;
   text-align: left;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
 }
@@ -985,6 +987,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   background-color: var(--accent-background-color);
+
+  color: var(--primary-white-color);
 }
 
 .footer-form-btn-fill {
