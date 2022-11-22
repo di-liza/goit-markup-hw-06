@@ -406,12 +406,10 @@ img {
   transition: border 250ms var(--timing-function);
 }
 
-.modal-form-filling-data:hover,
 .modal-form-filling-data:focus {
   outline: transparent;
   border: 1px solid var(--accent-color);
 }
-.modal-form-filling-textarea:hover,
 .modal-form-filling-textarea:focus {
   outline: transparent;
   border: 1px solid var(--accent-color);
