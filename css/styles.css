@@ -484,6 +484,12 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+
+  transition: background-color 250ms var(--timing-function);
+}
+.modal-form-filling-btn:hover,
+.modal-form-filling-btn:focus {
+  background-color: #188ce8;
 }
 /* Особливості */
 /* h2 */
