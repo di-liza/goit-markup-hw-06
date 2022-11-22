@@ -891,6 +891,7 @@ img {
 }
 .footer-cont {
   display: flex;
+  align-items: baseline;
 }
 .address-cont {
   width: 231px;
@@ -977,6 +978,7 @@ img {
 
   border: 1px solid #6d6e75;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   background-color: var(--accent-background-color);
 }
